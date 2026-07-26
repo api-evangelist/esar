@@ -1,7 +1,24 @@
 aid: esar
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/esar.png
 name: Esar
-description: Esar is a company surfaced as a portfolio company of 500-global and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: Esar (ايسار) is a Saudi Arabia and UAE based car rental marketplace that connects vehicle
+  owners with renters through a mobile app, offering luxury, sports, family, and 4x4 vehicles across
+  Riyadh, Jeddah, Mecca, and Dubai. The platform lets car owners list vehicles to earn recurring returns
+  while giving travelers on-demand access to a curated fleet at competitive daily rates. Headquartered in
+  Jeddah, Esar is an early-stage startup backed by 500 Global and the Taqadam accelerator. This API
+  Evangelist profile tracks the company as a portfolio lead; no public developer API surface has been
+  found to date.
 url: https://raw.githubusercontent.com/api-evangelist/esar/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +28,15 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
+- Car Rental
+- Mobility
+- Marketplace
+- Transportation
+- Saudi Arabia
+- Travel
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +44,20 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/esar-domain-security.yml
 - type: Website
   url: https://esarcar.com
+- type: Support
+  url: mailto:support@esarcar.com
+- type: Twitter
+  url: https://x.com/ESARCAR
+- type: LinkedIn
+  url: https://www.linkedin.com/company/esarcar/
+- type: AppStore
+  url: https://apps.apple.com/us/app/esar-car-rental/id6755410743
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
